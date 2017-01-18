@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    backupGlobals               = "false"
+    backupStaticAttributes      = "false"
+    colors                      = "false"
+    convertErrorsToExceptions   = "true"
+    convertNoticesToExceptions  = "true"
+    convertWarningsToExceptions = "true"
+    processIsolation            = "false"
+    stopOnFailure               = "false"
+    syntaxCheck                 = "false" >
+    
+    <testsuites>
+        <testsuite name="App">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+
+     <logging>
+    	<log 
+    		type="coverage-html"
+    		target="./tmp/coverage/html"
+    		charset="UTF-8"
+    		highlight="true"
+    		lowUpperBound="60"
+    		highLowerBound="90">
+		</log>
+    </logging>
+</phpunit>
